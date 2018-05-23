@@ -18,10 +18,9 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        if (isDebug) {
-            ARouter.openLog();
-            ARouter.openDebug();
-        }
+
+        ARouter.openLog();
+        ARouter.openDebug();
 
         ARouter.init(this);
     }
